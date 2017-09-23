@@ -1,0 +1,10 @@
+body, html {
+  margin: 0px;
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
+}
