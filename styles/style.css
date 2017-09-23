@@ -1,16 +1,13 @@
 body, html {
   margin: 0px;
   font-family: 'Nunito', 'Helvetica', sans-serif;
+  color: #005AB4;
 }
 
 #navbar {
-  background-color: lightseagreen;
+  background-color: #005AB4;
   overflow: hidden;
   width: 100%;
-}
-
-#topNav {
-  width: 80%;
 }
 
 #topNav #rbc-brand {

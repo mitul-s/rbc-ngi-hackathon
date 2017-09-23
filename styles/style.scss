@@ -1,20 +1,21 @@
-$brand-color: #FFF;
-$secondary: #fff;
+$dark-blue: #005AB4;
+$light-blue: #007CE2;
+$yellow: #FEDF01;
+$grey: #f1f2f2;
 
 body, html {
   margin: 0px;
   font-family: 'Nunito', 'Helvetica', sans-serif;
+  color: $dark-blue;
 }
 
 #navbar {
-  background-color: lightseagreen;
+  background-color: $dark-blue;
   overflow: hidden;
   width: 100%;
 }
 
 #topNav {
-  width: 80%;
-
   #rbc-brand {
     text-align: center;
     float: left;
