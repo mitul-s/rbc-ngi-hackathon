@@ -2,17 +2,49 @@ body, html {
   margin: 0px;
   font-family: 'Nunito', 'Helvetica', sans-serif;
   color: #005AB4;
+  background-color: #f1f2f2;
 }
 
-* {
-  box-sizing: border-box;
+h1, h2, h3, footer {
+  margin: 0px;
 }
 
-body {
-  position: absolute;
-  top: 0;
-  margin: 0;
-  padding: 0;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.flex, #header .callout, #content .cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
+}
+
+.btn {
+  border: 2px solid transparent;
+  text-align: center;
+  color: #005AB4;
+  font-weight: bolder;
+  background-color: #FEDF01;
+  border-radius: 100px;
+  padding: 5px 20px 5px 20px;
+  transition: 0.5s all;
+}
+
+.btn:hover {
+  border: 2px solid #FEDF01;
+  background-color: #fff;
+}
+
+#navbar {
+  background-color: #005AB4;
+  overflow: hidden;
   width: 100%;
   padding-top: 80px;
   height: 1900px;
@@ -81,8 +113,66 @@ header {
   font-size: 28px;
 }
 
-.container {
+#header {
+  background-image: url("https://farm9.staticflickr.com/8086/8500579154_5350408dc9.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+}
+
+#header .callout {
+  font-size: 1.5em;
+  text-align: center;
+  height: 40vh;
+  width: 50%;
   margin: 0 auto;
-  width: 80%;
-  height: 100%;
+}
+
+#content {
+  height: auto;
+  margin-bottom: 50px;
+}
+
+#content .cta {
+  text-align: center;
+  height: 12vh;
+}
+
+.filter {
+  background-color: #fff;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 23% 23% 23% 23%;
+  grid-gap: 20px;
+}
+
+.grid .item {
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  transition: all 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.grid .item:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.grid .item h3 {
+  font-weight: bolder;
+}
+
+#footer {
+  height: auto;
+  background-color: #005AB4;
+  color: #fff;
+}
+
+#footer .text {
+  display: flex;
 }
