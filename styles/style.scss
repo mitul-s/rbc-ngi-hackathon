@@ -52,23 +52,72 @@ a {
   background-color: $dark-blue;
   overflow: hidden;
   width: 100%;
+  padding-top: 80px;
+  height: 1900px;
 }
 
-#topNav {
-  #rbc-brand {
-    text-align: center;
-    float: left;
-    display: block;
+header {
+  width: 100%;
+}
+
+@supports (position: sticky) {
+  body {
+    padding-top: 0;
   }
 
-  a {
+  header {
+    position: sticky;
+  }
+
+}
+
+.navbar {
+  position: relative;
+  height: 80px;
+  width: 100%;
+  background: $dark-blue;
+  color: white;
+
+  .nav {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
     float: right;
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+    margin-right: 5%;
+
+      .item {
+        list-style: none;
+        display: inline-block;
+        font-size: 18px;
+        padding: 0 5px;
+        font-weight: 300;
+        line-height: 80px;
+        min-width: 120px;
+        text-align: center;
+
+        &.background-brand-light {
+            background: $light-blue;
+        }
+
+      a {
+        text-align: center;
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+
+  .logo {
+    float: left;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 5%;
+    width: 70px;
+    height: 70px;
+
+    .brand-name {
+      font-size: 28px;
+    }
   }
 }
 
