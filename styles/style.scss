@@ -231,3 +231,19 @@ header {
     width: 50%;
   }
 }
+
+// DISCOVERHTML
+// TABS
+#tabs{
+  background-color: #fff;
+  .tabs-data {
+    margin: 0 auto;
+    width: 80%;
+    height: 50px;
+    background-color: white;
+    p {
+      padding-top: 15px;
+      margin-top: 0px;
+    }
+  }
+}
