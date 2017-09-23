@@ -221,3 +221,19 @@ header {
 #footer div {
   width: 50%;
 }
+
+#tabs {
+  background-color: #fff;
+}
+
+#tabs .tabs-data {
+  margin: 0 auto;
+  width: 80%;
+  height: 50px;
+  background-color: white;
+}
+
+#tabs .tabs-data p {
+  padding-top: 15px;
+  margin-top: 0px;
+}
