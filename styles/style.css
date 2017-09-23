@@ -1,6 +1,31 @@
 body, html {
   margin: 0px;
-  font-family: 'Roboto', 'Helvetica', sans-serif;
+  font-family: 'Nunito', 'Helvetica', sans-serif;
+}
+
+#navbar {
+  background-color: lightseagreen;
+  overflow: hidden;
+  width: 100%;
+}
+
+#topNav {
+  width: 80%;
+}
+
+#topNav #rbc-brand {
+  float: left;
+  display: block;
+}
+
+#topNav a {
+  float: right;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 .container {
