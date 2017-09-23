@@ -1,0 +1,24 @@
+#learning {
+  .item {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+
+    .item-image {
+      width:400px;
+
+      img{
+        width: 100%;
+      }
+    }
+    .item-text {
+      padding: 20px;
+      width: 80%;
+
+      button {
+        min-width: 110px;
+      }
+    }
+  }
+}
