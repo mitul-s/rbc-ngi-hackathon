@@ -89,19 +89,19 @@ header {
     float: right;
     margin-right: 5%;
 
-      .item {
-        list-style: none;
-        display: inline-block;
-        font-size: 18px;
-        padding: 0 5px;
-        font-weight: 300;
-        line-height: 80px;
-        min-width: 120px;
-        text-align: center;
+    .item {
+      list-style: none;
+      display: inline-block;
+      font-size: 18px;
+      padding: 0 5px;
+      font-weight: 300;
+      line-height: 80px;
+      min-width: 120px;
+      text-align: center;
 
-        &.background-brand-light {
-            background: $light-blue;
-        }
+      &.background-brand-light {
+        background: $light-blue;
+      }
 
       a {
         text-align: center;
@@ -285,6 +285,21 @@ header {
   }
 }
 
+#videoElement {
+  width: 100%;
+}
+
+.btn-red{
+  background: red;
+  color: white;
+
+  &:hover {
+    border-color: red;
+    background: white;
+    color: red;
+  }
+}
+
 #alex {
   width: 25%;
   height: 25%;
@@ -382,4 +397,13 @@ header {
   .update {
     display: none;
   }
+}
+
+.fade-in {
+  animation: fade-in 0.8s linear;
+}
+
+@keyframes fade-in {
+  from { opacity: 0;}
+  to { opacity: 1;}
 }

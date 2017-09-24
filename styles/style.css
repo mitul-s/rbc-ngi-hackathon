@@ -280,6 +280,21 @@ header {
   padding: 20px;
 }
 
+#videoElement {
+  width: 100%;
+}
+
+.btn-red {
+  background: red;
+  color: white;
+}
+
+.btn-red:hover {
+  border-color: red;
+  background: white;
+  color: red;
+}
+
 #alex {
   width: 25%;
   height: 25%;
@@ -387,4 +402,17 @@ header {
 
 .pitch .update {
   display: none;
+}
+
+.fade-in {
+  animation: fade-in 0.8s linear;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

@@ -36,10 +36,10 @@
    <div class="container">
     <section id="content">
       <div class="cta">
-        <h2>Voice Banking</h2>
+        <h2 id="headerChange">Voice Banking</h2>
       </div>
       <div class="grid-discover">
-        <div class="desc">
+        <div id="jobDescription" class="desc">
           <div id="holder">
           <h4>Challenge Description</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -59,6 +59,24 @@
           </p>
           </div>
         </div>
+        <div id="recordVideo" class="desc hide">
+          <p>Submit a short 60-sec video application to be considered for the Voice Banking Challenge. You will be notified if you are selected to
+participate in the challenge.</p>
+          <div id="container">
+            <video autoplay="true" id="videoElement">
+
+            </video>
+            <p><span id="seconds">00</span>:<span id="tens">00</span></p>
+            <button id="button-start" class="btn btn-red">Start Recording..</button>
+            <button id="button-stop" class="btn btn-red hide">Stop Recording..</button>
+            <button id="button-send-video" class="btn hide">Submit Video</button>
+          </div>
+        </div>
+        <div id="applicationSubmitted" class="hide">
+          <p class="bold">Thank you for applying!</p>
+          <p>We'll review your video application and notify you if you are selected to participate in the challenge.</p>
+          <a href="index.html"><button type="button" class="btn bold" name="Discover more projects">Discover more projects</button></a>
+        </div>
         <div class="sponsor">
           <div class="grid-sm">
             <div class="spon">
@@ -71,10 +89,10 @@
                 VP, Innovation
               </p>
             </div>
-            <div class="apply">
+            <div id="side-apply-notice" class="apply">
               <h4>Apply Now</h4>
               <p>Submit a short 60-sec video application to be considered for this Sprint!</p>
-              <button class="btn">Apply now</button>
+              <button id="applicationPhase" class="btn">Apply now</button>
             </div>
           </div>
         </div>
@@ -89,6 +107,6 @@
          <p>RBCSprints is an initiative to encourage skills and career enhancement through experiential learning while tackling real business opportunities at the Bank.</p>
        </div>
     </footer>
-  <script src="script.js"></script>
+  <script src="discover.js"></script>
 </body>
 </html>
