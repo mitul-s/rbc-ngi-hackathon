@@ -391,6 +391,7 @@ header {
     min-height: 30px;
     transition: 0.3s all;
     border: 2px solid $grey;
+    border-radius: 100px;
     &:focus{
       outline: none;
       border: 2px solid $yellow;
