@@ -1,0 +1,29 @@
+#learning {
+  .item {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    display: flex;
+    transition: all 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+    &:hover {
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    }
+
+    .item-image {
+      width:300px;
+
+      img{
+        width: 100%;
+      }
+    }
+    .item-text {
+      padding: 20px;
+      width: 80%;
+
+      button {
+        min-width: 110px;
+      }
+    }
+  }
+}
