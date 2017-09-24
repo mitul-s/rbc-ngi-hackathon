@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>RBC NGI Hackathon</title>
+  <link href="styles/style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Nunito:300,800|Roboto" rel="stylesheet">
+</head>
+<body>
+  <header>
+   <div class="navbar">
+     <div class="nav">
+       <div class="item background-brand-light">
+         <a href="index.html">Discover</a>
+       </div>
+       <div class="item">
+         <a href="learn.html">Learn</a>
+       </div>
+       <div class="item background-brand-light">
+         <a href="pitch.html">Pitch</a>
+       </div>
+       <div class="item ">
+         <a href="profile.html" >Profile</a>
+       </div>
+       <div class="item background-brand-light">
+          <a href="search.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Feedbin-Favicon-search-light.svg/1000px-Feedbin-Favicon-search-light.svg.png" alt=""></a>
+       </div>
+     </div>
+     <div class="logo">
+       <a href="index.html"><p class="brand-name"><span class="bold">RBC</span>Sprints</p></a>
+     </div>
+   </div>
+ </header>
+   <section id="tabs">
+     <div class="tabs-data">
+       <p>Discover > <b>Voice Banking</b></p>
+     </div>
+   </section>
+   <div class="container">
+    <section id="content">
+      <div class="cta">
+        <h2 id="headerChange">Voice Banking</h2>
+      </div>
+      <div class="grid-discover">
+        <div id="jobDescription" class="desc">
+          <div id="holder">
+          <h4>Challenge Description</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <h4>Skills Required</h4>
+          <p>
+            > 2 Business Analyst
+            <br />
+            > 3 Developers (NodeJS, Python, React)
+          </p>
+          <h4>Time Frame</h4>
+          <p>Roughly 4 Months</p>
+          <h4>Location</h4>
+          <p id="last">
+            Toronto, ON
+            <br />
+            Preferably at 88 Queens Quay, but flexible with any Toronto location.
+          </p>
+          </div>
+        </div>
+        <div id="recordVideo" class="desc hide">
+          <p>Submit a short 60-sec video application to be considered for the Voice Banking Challenge. You will be notified if you are selected to
+participate in the challenge.</p>
+          <div id="container">
+            <video autoplay="true" id="videoElement">
+
+            </video>
+            <p><span id="seconds">00</span>:<span id="tens">00</span></p>
+            <button id="button-start" class="btn btn-red">Start Recording..</button>
+            <button id="button-stop" class="btn btn-red hide">Stop Recording..</button>
+            <button id="button-send-video" class="btn hide">Submit Video</button>
+          </div>
+        </div>
+        <div id="submittingVideo" class="hide submittingVideo-items">
+          <p>Hey, Abdullah!</p>
+          <div class="spinner">
+          </div>
+          <p>Your video response is being uploaded, please wait..</p>
+      </div>
+        <div id="applicationSubmitted" class="hide">
+          <p class="bold">Thank you for applying!</p>
+          <p>We'll review your video application and notify you if you are selected to participate in the challenge.</p>
+          <a href="index.html"><button type="button" class="btn bold" name="Discover more projects">Discover more projects</button></a>
+        </div>
+        <div class="sponsor">
+          <div class="grid-sm">
+            <div class="spon">
+              <img src="images/alex.jpg" id="alex" />
+              <p>
+                <b>Project Sponsor</b>
+                <br />
+                Alexander Peh
+                <br />
+                VP, Innovation
+              </p>
+            </div>
+            <div id="side-apply-notice" class="apply">
+              <h4>Apply Now</h4>
+              <p>Submit a short 60-sec video application to be considered for this Sprint!</p>
+              <button id="applicationPhase" class="btn">Apply now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+    <footer id="footer">
+      <div class="text">
+        <p class="footer-logo"><span class="bold">RBC</span>Sprints</p>
+      </div>
+       <div class="footer-rbc-text">
+         <p>RBCSprints is an initiative to encourage skills and career enhancement through experiential learning while tackling real business opportunities at the Bank.</p>
+       </div>
+    </footer>
+  <script src="discover.js"></script>
+</body>
+</html>
