@@ -270,6 +270,271 @@ header {
   margin-bottom: 0px;
 }
 
+#videoElement {
+  width: 100%;
+  background-color: #666;
+}
+
+#videoElement body {
+  font-family: sans-serif;
+  font-weight: 300;
+}
+
+#videoElement a {
+  color: #4183C4;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+#videoElement a:hover {
+  color: #3d85c6;
+  text-decoration: underline;
+}
+
+#videoElement a.twitter-follow-button {
+  display: block;
+  height: 32px;
+}
+
+#videoElement a#viewSource {
+  display: block;
+  margin: 1.3em 0 0 0;
+  border-top: 1px solid #999;
+  padding: 1em 0 0 0;
+}
+
+#videoElement div#links a {
+  display: block;
+  line-height: 1.3em;
+  margin: 0 0 1.5em 0;
+}
+
+@media screen and (min-width: 1000px) {
+  #videoElement {
+    /* hack! to detect non-touch devices */
+  }
+  #videoElement div#links a {
+    line-height: 0.8em;
+  }
+}
+
+#videoElement h1 a {
+  font-weight: 300;
+  white-space: nowrap;
+}
+
+#videoElement audio {
+  max-width: 100%;
+}
+
+#videoElement body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 1em;
+  word-break: break-word;
+}
+
+#videoElement canvas {
+  background-color: #ccc;
+  max-width: 100%;
+  width: 100%;
+}
+
+#videoElement code {
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+#videoElement div#container {
+  margin: 0 auto 0 auto;
+  max-width: 720px;
+  padding: 1em 1.5em 1.3em 1.5em;
+}
+
+#videoElement div#highlight {
+  border: 1px solid #666;
+  font-size: 1.2em;
+  margin: 0 0 50px 0;
+  padding: 0 1em 0 1em;
+}
+
+#videoElement div#links {
+  padding: 0.5em 0 0 0;
+}
+
+#videoElement h1 {
+  border-bottom: 1px solid #ccc;
+  font-family: sans-serif;
+  font-weight: 500;
+  margin: 0 0 0.8em 0;
+  padding: 0 0 0.2em 0;
+}
+
+#videoElement h2 {
+  color: #444;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1.2em;
+  margin: 0 0 0.8em 0;
+}
+
+#videoElement h3 {
+  border-top: 1px solid #eee;
+  color: #666;
+  font-size: 0.9em;
+  font-weight: 500;
+  margin: 20px 0 10px 0;
+  padding: 10px 0 0 0;
+  white-space: nowrap;
+}
+
+#videoElement html {
+  /* avoid annoying page width change
+when moving from the home page */
+  overflow-y: scroll;
+}
+
+#videoElement img {
+  border: none;
+  max-width: 100%;
+}
+
+#videoElement input {
+  font-family: sans-serif;
+}
+
+#videoElement input[type=radio] {
+  position: relative;
+  top: -1px;
+}
+
+#videoElement input[type=radio] {
+  position: relative;
+  top: -1px;
+}
+
+#videoElement ol {
+  padding: 0 0 0 20px;
+}
+
+#videoElement p {
+  color: #444;
+  font-weight: 300;
+  line-height: 1.6em;
+}
+
+#videoElement p#data {
+  border-top: 1px dotted #666;
+  font-family: Courier New, monospace;
+  line-height: 1.3em;
+  max-height: 1000px;
+  overflow-y: auto;
+  padding: 1em 0 0 0;
+}
+
+#videoElement p.borderBelow {
+  border-bottom: 1px solid #eee;
+  padding: 0 0 20px 0;
+}
+
+#videoElement section p:last-of-type {
+  margin: 0;
+}
+
+#videoElement section {
+  border-bottom: 1px solid #eee;
+  margin: 0 0 30px 0;
+  padding: 0 0 20px 0;
+}
+
+#videoElement section:last-of-type {
+  border-bottom: none;
+  padding: 0 0 1em 0;
+}
+
+#videoElement select {
+  margin: 0 1em 1em 0;
+  position: relative;
+  top: -1px;
+}
+
+#videoElement h1 span {
+  white-space: nowrap;
+}
+
+#videoElement strong {
+  font-weight: 500;
+}
+
+#videoElement ul {
+  padding: 0 0 0 20px;
+}
+
+#videoElement section p:last-of-type {
+  margin: 0;
+}
+
+#videoElement section {
+  border-bottom: 1px solid #eee;
+  margin: 0 0 30px 0;
+  padding: 0 0 20px 0;
+}
+
+#videoElement section:last-of-type {
+  border-bottom: none;
+  padding: 0 0 1em 0;
+}
+
+#videoElement select {
+  margin: 0 1em 1em 0;
+  position: relative;
+  top: -1px;
+}
+
+#videoElement h1 span {
+  white-space: nowrap;
+}
+
+#videoElement strong {
+  font-weight: 500;
+}
+
+#videoElement video {
+  width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+  #videoElement h1 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #videoElement button:active {
+    background-color: darkRed;
+  }
+  #videoElement h1 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #videoElement h1 {
+    font-size: 20px;
+  }
+}
+
+.btn-red {
+  background: red;
+  color: white;
+}
+
+.btn-red:hover {
+  border-color: red;
+  background: white;
+  color: red;
+}
+
 #alex {
   width: 25%;
   height: 25%;
