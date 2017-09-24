@@ -28,6 +28,7 @@ a {
   margin: 0 auto;
   width: 80%;
   height: 100%;
+  min-height: 100vh;
 }
 
 .btn {
@@ -92,10 +93,25 @@ header {
   line-height: 80px;
   min-width: 120px;
   text-align: center;
+  transition: all 0.5s;
+}
+
+.navbar .nav .item:hover {
+  background-color: #FEDF01;
+  color: #222;
 }
 
 .navbar .nav .item.background-brand-light {
   background: #007CE2;
+}
+
+.navbar .nav .item.background-brand-light:hover {
+  background-color: #FEDF01;
+  color: #222;
+}
+
+.navbar .nav .item img {
+  width: 20px;
 }
 
 .navbar .nav .item a {
@@ -148,7 +164,7 @@ header {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   padding-top: 10px;
 }
 
@@ -304,7 +320,7 @@ header {
 }
 
 #holder-profile, #skills-profile, #activity-profile {
-  height: 75px;
+  min-height: 75px;
 }
 
 #holder-profile h4, #skills-profile h4, #activity-profile h4 {
@@ -317,7 +333,7 @@ header {
 }
 
 #badges-profile {
-  height: 200px;
+  min-height: 200px;
 }
 
 #badges-profile #badges {
@@ -334,9 +350,26 @@ header {
   grid-gap: 20px 20px;
 }
 
+.grid-sm .profile-info {
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.grid-sm .profile-info img {
+  padding: 15px;
+  border-radius: 50%;
+  background: white;
+  width: 100px;
+  height: 100px;
+}
+
 .grid-sm .name, .grid-sm .bio, .grid-sm .location, .grid-sm .spon {
   background-color: #fff;
-  padding: 20px;
+  padding: 15px;
   margin-bottom: 10px;
 }
 
