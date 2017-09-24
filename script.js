@@ -1,8 +1,5 @@
 
 document.getElementById('markCourseComplete').addEventListener('click', function(){
-  console.log(
-    'sssssss'
-  );
   document.getElementById('video-tutorial').className = 'hide';
   document.getElementById('videoFinishNotif').className = 'fade-in';
 })
