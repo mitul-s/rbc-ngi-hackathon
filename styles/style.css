@@ -270,6 +270,21 @@ header {
   margin-bottom: 0px;
 }
 
+#videoElement {
+  width: 100%;
+}
+
+.btn-red {
+  background: red;
+  color: white;
+}
+
+.btn-red:hover {
+  border-color: red;
+  background: white;
+  color: red;
+}
+
 #alex {
   width: 25%;
   height: 25%;
