@@ -28,7 +28,6 @@ a {
   margin: 0 auto;
   width: 80%;
   height: 100%;
-  min-height: 100vh;
 }
 
 .btn {
@@ -270,6 +269,17 @@ header {
   margin-bottom: 0px;
 }
 
+.grid-profile {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  grid-gap: 20px 20px;
+}
+
+.grid-profile .logs {
+  background-color: #fff;
+  padding: 20px;
+}
+
 #videoElement {
   width: 100%;
 }
@@ -293,27 +303,105 @@ header {
   margin-right: 15%;
 }
 
+#holder-profile, #skills-profile, #activity-profile {
+  height: 75px;
+}
+
+#holder-profile h4, #skills-profile h4, #activity-profile h4 {
+  margin-bottom: 12px;
+}
+
+#holder-profile .btn, #skills-profile .btn, #activity-profile .btn {
+  font-size: 12px;
+  background-color: #f1f2f2;
+}
+
+#badges-profile {
+  height: 200px;
+}
+
+#badges-profile #badges {
+  width: 65%;
+}
+
+#activity {
+  width: 70%;
+}
+
 .grid-sm {
   display: grid;
   grid-template-rows: 65% 35%;
   grid-gap: 20px 20px;
 }
 
-.grid-sm .spon {
-  display: inline-flex;
+.grid-sm .name, .grid-sm .bio, .grid-sm .location, .grid-sm .spon {
   background-color: #fff;
   padding: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
-.grid-sm .spon p {
-  width: 100%;
-  margin-bottom: 0px;
+.grid-sm .name .change, .grid-sm .bio .change, .grid-sm .location .change, .grid-sm .spon .change {
+  margin-top: 0px;
 }
 
 .grid-sm .apply {
   background-color: #fff;
   padding: 20px;
+}
+
+.people {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.people #search {
+  width: 100%;
+  min-height: 30px;
+  transition: 0.3s all;
+  border: 2px solid #f1f2f2;
+}
+
+.people #search:focus {
+  outline: none;
+  border: 2px solid #FEDF01;
+}
+
+.people .item {
+  background-color: #f1f2f2;
+  padding: 0px 10px 10px 10px;
+  margin-top: 15px;
+}
+
+.item-collection {
+  list-style: none;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.right {
+  float: right;
+  margin-top: -100px;
+}
+
+.pitch {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.pitch .text {
+  text-align: center;
+}
+
+.pitch #txtarea {
+  width: 80%;
+  min-height: 100px;
+  border: 1px solid #007CE2;
+}
+
+.pitch .update {
+  display: none;
 }
 
 .fade-in {
