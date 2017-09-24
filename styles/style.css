@@ -20,10 +20,6 @@ a {
   justify-content: center;
 }
 
-.hide {
-  display: none;
-}
-
 .container {
   margin: 0 auto;
   width: 80%;
@@ -159,6 +155,58 @@ header {
   height: 12vh;
 }
 
+#welcomeSignIn {
+  background-image: url("../images/welcome-bg.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.signing-in-container {
+  background: #007CE2;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signing-in-container .signing-in-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.signing-in-container p {
+  padding: 10px;
+}
+
+.submittingVideo-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  width: 100px;
+  height: 100px;
+  border: 2px solid transparent;
+  border-top: solid #FEDF01;
+  border-radius: 50%;
+  animation: rotate 0.8s infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .filter {
   background-color: #fff;
   width: 100%;
@@ -170,6 +218,17 @@ header {
 
 .filter .text {
   padding: 1px;
+}
+
+.welcome-container {
+  padding: 50px;
+}
+
+.form-container {
+  color: white;
+  padding: 30px;
+  background: #005AB4;
+  border-radius: 5px;
 }
 
 .filters {
@@ -367,13 +426,20 @@ header {
   height: 100px;
 }
 
-.grid-sm .name, .grid-sm .bio, .grid-sm .location, .grid-sm .spon {
+.grid-sm .spon {
+  background-color: #fff;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.grid-sm .name, .grid-sm .bio, .grid-sm .location {
   background-color: #fff;
   padding: 15px;
   margin-bottom: 10px;
 }
 
-.grid-sm .name .change, .grid-sm .bio .change, .grid-sm .location .change, .grid-sm .spon .change {
+.grid-sm .name .change, .grid-sm .bio .change, .grid-sm .location .change {
   margin-top: 0px;
 }
 
@@ -449,4 +515,12 @@ header {
   to {
     opacity: 1;
   }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hide {
+  display: none;
 }

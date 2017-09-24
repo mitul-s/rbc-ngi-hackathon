@@ -18,9 +18,12 @@ window.onload = function () {
   });
 
   buttonVideo.addEventListener('click', function(){
+    document.getElementById('submittingVideo').className = 'submittingVideo-items desc';
     document.getElementById('recordVideo').className = 'hide';
-    document.getElementById('applicationSubmitted').className = 'desc fade-in';
-    document.getElementById('headerChange').innerHTML = "Thank You!"
+    setTimeout(function(){
+      document.getElementById('submittingVideo').className = 'hide';
+      document.getElementById('applicationSubmitted').className = 'desc fade-in';
+      document.getElementById('headerChange').innerHTML = "Thank You!"}, 3000);
   });
   function handleVideo(stream) {
       video.src = window.URL.createObjectURL(stream);
