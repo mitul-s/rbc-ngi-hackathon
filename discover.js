@@ -13,13 +13,13 @@ window.onload = function () {
 
   document.getElementById('applicationPhase').addEventListener('click', function(){
     document.getElementById('jobDescription').className = 'hide';
-    document.getElementById('recordVideo').className = 'desc';
+    document.getElementById('recordVideo').className = 'desc fade-in';
     document.getElementById('side-apply-notice').className = 'hide';
   });
 
   buttonVideo.addEventListener('click', function(){
     document.getElementById('recordVideo').className = 'hide';
-    document.getElementById('applicationSubmitted').className = 'desc';
+    document.getElementById('applicationSubmitted').className = 'desc fade-in';
     document.getElementById('headerChange').innerHTML = "Thank You!"
   });
   function handleVideo(stream) {
