@@ -33,7 +33,6 @@ a {
   margin: 0 auto;
   width: 80%;
   height: 100%;
-  min-height: 100vh;
 }
 
 .btn {
@@ -231,7 +230,7 @@ header {
   }
 
   .footer-rbc-text{
-    font-size: 13px;  
+    font-size: 13px;
   }
   p {
     margin: 0;
@@ -276,6 +275,16 @@ header {
   }
 }
 
+.grid-profile {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  grid-gap: 20px 20px;
+  .logs {
+    background-color: #fff;
+    padding: 20px;
+  }
+}
+
 #alex {
   width: 25%;
   height: 25%;
@@ -283,23 +292,94 @@ header {
   border-radius: 50%;
   margin-right: 15%;
 }
+#holder-profile, #skills-profile, #activity-profile {
+  height: 75px;
+  h4 {
+    margin-bottom: 12px;
+  }
+  .btn {
+    font-size: 12px;
+    background-color: $grey;
+  }
+}
+
+
+#badges-profile {
+  height: 200px;
+  #badges {
+    width: 65%;
+  }
+}
+
+#activity {
+  width: 70%;
+}
 
 .grid-sm {
   display: grid;
   grid-template-rows: 65% 35%;
   grid-gap: 20px 20px;
-  .spon {
-    display: inline-flex;
+  .name, .bio, .location, .spon {
     background-color: #fff;
     padding: 20px;
-    margin-bottom: 5px;
-    p {
-      width: 100%;
-      margin-bottom: 0px;
+    margin-bottom: 10px;
+    .change {
+      margin-top: 0px;
     }
   }
   .apply {
     background-color: #fff;
     padding: 20px;
+  }
+}
+
+// SEARCH
+.people {
+  background-color: #fff;
+  padding: 20px;
+  #search {
+    width: 100%;
+    min-height: 30px;
+    transition: 0.3s all;
+    border: 2px solid $grey;
+    &:focus{
+      outline: none;
+      border: 2px solid $yellow;
+    }
+  }
+  .item {
+    background-color: $grey;
+    padding: 0px 10px 10px 10px;
+    margin-top: 15px;
+  }
+}
+
+.item-collection {
+  list-style: none;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.right {
+  float: right;
+  margin-top: -100px;
+}
+
+// PITCH
+.pitch {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  .text {
+    text-align: center;
+  }
+  #txtarea {
+    width: 80%;
+    min-height: 100px;
+    border: 1px solid $light-blue;
+  }
+  .update {
+    display: none;
   }
 }
