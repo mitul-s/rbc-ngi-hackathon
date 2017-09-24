@@ -10,7 +10,7 @@ body, html {
   background-color: $grey;
 }
 
-h1, h2, h3, footer {
+h1, h2, h3, h4, footer {
   margin: 0px;
 }
 
@@ -127,7 +127,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
+  height: 40vh;
   width: 100%;
   .callout {
     font-size: 1.5em;
@@ -156,6 +156,7 @@ header {
   margin: 0 auto;
   text-align: center;
   margin-bottom: 10px;
+  padding-top: 10px;
   .text {
     padding: 1px;
   }
@@ -190,9 +191,10 @@ header {
 .grid {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-gap: 20px 0px;
+  grid-gap: 20px 5px;
   .item {
-    padding: 20px;
+    max-width: 85%;
+    padding: 10px;
     text-align: center;
     background-color: #fff;
     transition: all 0.7s cubic-bezier(.25,.8,.25,1);
@@ -223,6 +225,9 @@ header {
     font-size: 28px;
   }
 
+  .footer-rbc-text{
+    font-size: 13px;  
+  }
   p {
     margin: 0;
   }
@@ -245,5 +250,51 @@ header {
       padding-top: 15px;
       margin-top: 0px;
     }
+  }
+}
+
+.grid-discover {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  grid-gap: 20px 20px;
+  .desc {
+    background-color: #fff;
+    padding: 20px;
+    p {
+      margin: 0px;
+      margin-top: 7px;
+      margin-bottom: 20px;
+    }
+    #last {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+#alex {
+  width: 25%;
+  height: 25%;
+  margin-bottom: 0px;
+  border-radius: 50%;
+  margin-right: 15%;
+}
+
+.grid-sm {
+  display: grid;
+  grid-template-rows: 65% 35%;
+  grid-gap: 20px 20px;
+  .spon {
+    display: inline-flex;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 5px;
+    p {
+      width: 100%;
+      margin-bottom: 0px;
+    }
+  }
+  .apply {
+    background-color: #fff;
+    padding: 20px;
   }
 }
