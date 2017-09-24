@@ -1,0 +1,76 @@
+.course {
+  display: flex;
+}
+
+.course .video-section-container {
+  width: 100%;
+}
+
+.course .item {
+  margin: 0 20px;
+  background: white;
+}
+
+.course .item .item-text {
+  font-weight: bold;
+  margin: 10px;
+  padding: 10px;
+}
+
+.course .item .item-text button {
+  min-width: 120px;
+}
+
+.course .item-2 p {
+  background: white;
+  font-weight: bold;
+  margin: 0;
+  padding: 20px 20px;
+  border-bottom: 1px solid #005AB4;
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.course .item-2 p:hover {
+  background: #005AB4;
+  color: white;
+}
+
+.course .video-container {
+  background: white;
+  padding: 10px;
+}
+
+.course .course-video {
+  width: 100%;
+  height: 500px;
+  border: 0;
+}
+
+#videoFinishNotif .item {
+  margin: 10px 0;
+  padding: 40px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+}
+
+#videoFinishNotif .item img {
+  padding: 20px;
+  width: 150px;
+}
+
+.fade-in {
+  animation: fade-in 0.8s linear;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
