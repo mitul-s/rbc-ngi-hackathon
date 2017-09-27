@@ -29,7 +29,6 @@ a {
   margin: 0 auto;
   width: 80%;
   height: 100%;
-  min-height: 100vh;
 }
 
 .btn {
@@ -65,11 +64,9 @@ header {
   body {
     padding-top: 0;
   }
-
   header {
     position: sticky;
   }
-
 }
 
 .navbar {
@@ -166,13 +163,6 @@ header {
   }
 }
 
-#welcomeSignIn {
-  background-image: url('../images/welcome-bg.png');
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-}
-
 .signing-in-container{
   background:$light-blue;
   color: white;
@@ -229,17 +219,6 @@ header {
   .text {
     padding: 1px;
   }
-}
-
-.welcome-container{
-  padding: 50px;
-}
-
-.form-container {
-  color: white;
-  padding: 30px;
-  background: $dark-blue;
-  border-radius: 5px;
 }
 
 .filters {
@@ -394,7 +373,6 @@ header {
   }
 }
 
-
 #badges-profile {
   min-height: 200px;
   #badges {
@@ -433,7 +411,7 @@ header {
     padding: 15px;
     display: flex;
     flex-direction: row;
-    
+
   }
 
   .name, .bio, .location {
@@ -517,4 +495,47 @@ header {
 
 .hide {
   display: none;
+}
+
+
+// WELCOME PAGE
+#welcome {
+  height: 40vh;
+  width: 100%;
+  display: grid;
+  .callout {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+#welcomeSignIn {
+  background-image: url('../images/welcome-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+#form {
+  background-color: $dark-blue;
+  color: white;
+  padding: 30px;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 50%;
+  input {
+    border: 1px solid $grey;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+   #form {
+    width: 90%;
+  }
 }

@@ -24,7 +24,6 @@ a {
   margin: 0 auto;
   width: 80%;
   height: 100%;
-  min-height: 100vh;
 }
 
 .btn {
@@ -155,13 +154,6 @@ header {
   height: 12vh;
 }
 
-#welcomeSignIn {
-  background-image: url("../images/welcome-bg.png");
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-}
-
 .signing-in-container {
   background: #007CE2;
   color: white;
@@ -218,17 +210,6 @@ header {
 
 .filter .text {
   padding: 1px;
-}
-
-.welcome-container {
-  padding: 50px;
-}
-
-.form-container {
-  color: white;
-  padding: 30px;
-  background: #005AB4;
-  border-radius: 5px;
 }
 
 .filters {
@@ -523,4 +504,47 @@ header {
 
 .hide {
   display: none;
+}
+
+#welcome {
+  height: 40vh;
+  width: 100%;
+  display: grid;
+}
+
+#welcome .callout {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+
+#welcomeSignIn {
+  background-image: url("../images/welcome-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+#form {
+  background-color: #005AB4;
+  color: white;
+  padding: 30px;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 50%;
+}
+
+#form input {
+  border: 1px solid #f1f2f2;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 640px) {
+  #form {
+    width: 90%;
+  }
 }

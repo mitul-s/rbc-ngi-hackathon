@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Nunito:300,800|Roboto" rel="stylesheet">
 </head>
 <body>
+
   <header>
     <div class="navbar">
       <div class="nav">
@@ -24,35 +25,27 @@
       </div>
     </div>
   </header>
-  <div id="welcomeSignIn" class="container-fluid">
-    <div class="row welcome-container">
-      <div class="col-md-12 text-center">
-        <h1>Welcome to <span class="bold">RBC</span>Sprints!</h1>
-        <h2>Participate in digital challenges sponsored by leaders at RBC!</h2>
+
+
+  <div id="welcomeSignIn">
+    <section id="welcome">
+      <div class="callout">
+        <h1>Welcome to RBCSprints!</h1>
+        <h3>Participate in digital challenges sponsored by leaders at RBC.</h3>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3">
-      </div>
-      <div class="col-md-6">
-        <div class="form-container">
-          <form action="signing-in.html" onsubmit="return true" method="get">
-            <div class="form-group">
-              <label for="Email">RBC ID</label>
-              <input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Email Address">
-            </div>
-            <div class="form-group">
-              <label for="Subject">Password</label>
-              <input type="password" class="form-control" name="subject" placeholder="Password">
-            </div>
-          </form>
-          <div class="flex">
-            <button onclick="window.location.href='/signing-in.html'" class="btn text-center">Submit</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
+    <section id="form">
+        <form class="form" action="signing-in.html" onsubmit="return true" method="get">
+          <label for"email">RBC Login ID</label>
+          <input type="email" name="email" placeholder="Email Address"/>
+          <label for="passowrd">Password</label>
+          <input type="password" name="password" placeholder="Password"/>
+        </form>
+        <button onclick="window.location.href='/signing-in.html'" class="btn">Log In</button>
+    </section>
   </div>
+
+
   <footer id="footer">
     <div class="text">
       <p class="footer-logo"><span class="bold">RBC</span>Sprints</p>
@@ -61,6 +54,5 @@
       <p>RBCSprints is an initiative to encourage skills and career enhancement through experiential learning while tackling real business opportunities at the Bank.</p>
     </div>
   </footer>
-  <script src="script.js"></script>
 </body>
 </html>
