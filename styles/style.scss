@@ -313,27 +313,27 @@ header {
 // FOOTER
 
 #footer {
-  font-weight: 300;
-  height: auto;
+  width: 100%;
+  margin: 0;
+  height: 70px;
   background-color: $dark-blue;
   color: #fff;
-  padding: 20px 120px;
-  display: flex;
-  flex-direction: row;
-
-  .footer-logo {
-    font-size: 28px;
+  padding: 20px 0px;
+  .container {
+    width: 80%;
+  }
+  .logo {
+    width: 40%;
+    float: left;
+    font-size: 20px;
   }
 
-  .footer-rbc-text{
-    font-size: 13px;
-  }
-  p {
+  .footer-text{
     margin: 0;
-  }
-
-  div {
-    width: 50%;
+    font-size: 13px;
+    width: 60%;
+    float: right;
+    text-align: right;
   }
 }
 

@@ -306,29 +306,30 @@ header {
 }
 
 #footer {
-  font-weight: 300;
-  height: auto;
+  width: 100%;
+  margin: 0;
+  height: 70px;
   background-color: #005AB4;
   color: #fff;
-  padding: 20px 120px;
-  display: flex;
-  flex-direction: row;
+  padding: 20px 0px;
 }
 
-#footer .footer-logo {
-  font-size: 28px;
+#footer .container {
+  width: 80%;
 }
 
-#footer .footer-rbc-text {
-  font-size: 13px;
+#footer .logo {
+  width: 40%;
+  float: left;
+  font-size: 20px;
 }
 
-#footer p {
+#footer .footer-text {
   margin: 0;
-}
-
-#footer div {
-  width: 50%;
+  font-size: 13px;
+  width: 60%;
+  float: right;
+  text-align: right;
 }
 
 #tabs {
