@@ -24,7 +24,6 @@ a {
   margin: 0 auto;
   width: 80%;
   height: 100%;
-  min-height: 100vh;
 }
 
 .btn {
@@ -43,12 +42,55 @@ a {
   background-color: #fff;
 }
 
+@media screen and (max-width: 640px) {
+  .topNav {
+    width: 100%;
+  }
+}
+
 #navbar {
   background-color: #005AB4;
   overflow: hidden;
+  height: 75px;
   width: 100%;
-  padding-top: 80px;
-  height: 1900px;
+}
+
+.topNav {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 50px;
+}
+
+.topNav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  min-width: 100px;
+  transition: 0.5s all;
+}
+
+.topNav a:nth-child(even) {
+  background-color: #007CE2;
+}
+
+.topNav a:hover {
+  background-color: #FEDF01;
+  color: #141414;
+}
+
+.topNav .branding {
+  margin: 0;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 0px;
+  text-decoration: none;
+  font-size: 25px;
 }
 
 header {
@@ -155,13 +197,6 @@ header {
   height: 12vh;
 }
 
-#welcomeSignIn {
-  background-image: url("../images/welcome-bg.png");
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-}
-
 .signing-in-container {
   background: #007CE2;
   color: white;
@@ -220,17 +255,6 @@ header {
   padding: 1px;
 }
 
-.welcome-container {
-  padding: 50px;
-}
-
-.form-container {
-  color: white;
-  padding: 30px;
-  background: #005AB4;
-  border-radius: 5px;
-}
-
 .filters {
   padding: 0px;
   margin-left: 0px;
@@ -282,29 +306,30 @@ header {
 }
 
 #footer {
-  font-weight: 300;
-  height: auto;
+  width: 100%;
+  margin: 0;
+  height: 70px;
   background-color: #005AB4;
   color: #fff;
-  padding: 20px 120px;
-  display: flex;
-  flex-direction: row;
+  padding: 20px 0px;
 }
 
-#footer .footer-logo {
-  font-size: 28px;
+#footer .container {
+  width: 80%;
 }
 
-#footer .footer-rbc-text {
-  font-size: 13px;
+#footer .logo {
+  width: 40%;
+  float: left;
+  font-size: 20px;
 }
 
-#footer p {
+#footer .footer-text {
   margin: 0;
-}
-
-#footer div {
-  width: 50%;
+  font-size: 13px;
+  width: 60%;
+  float: right;
+  text-align: right;
 }
 
 #tabs {
@@ -523,4 +548,47 @@ header {
 
 .hide {
   display: none;
+}
+
+#welcome {
+  height: 40vh;
+  width: 100%;
+  display: grid;
+}
+
+#welcome .callout {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+
+#welcomeSignIn {
+  background-image: url("../images/welcome-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+#form {
+  background-color: #005AB4;
+  color: white;
+  padding: 30px;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 50%;
+}
+
+#form input {
+  border: 1px solid #f1f2f2;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 640px) {
+  #form {
+    width: 90%;
+  }
 }

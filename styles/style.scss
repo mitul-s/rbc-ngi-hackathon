@@ -29,7 +29,6 @@ a {
   margin: 0 auto;
   width: 80%;
   height: 100%;
-  min-height: 100vh;
 }
 
 .btn {
@@ -47,15 +46,56 @@ a {
   }
 }
 
-// NAVBAR
 
+@media screen and (max-width: 640px) {
+  .topNav {
+    width: 100%;
+  }
+}
+
+// NEW NAVBAR
 #navbar {
   background-color: $dark-blue;
   overflow: hidden;
+  height: 75px;
   width: 100%;
-  padding-top: 80px;
-  height: 1900px;
 }
+
+.topNav {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 50px;
+  a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    min-width: 100px;
+    transition: 0.5s all;
+    &:nth-child(even){
+      background-color: $light-blue;
+    }
+    &:hover{
+      background-color: $yellow;
+      color: #141414;
+    }
+  }
+  .branding {
+    margin: 0;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 0px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+}
+
+// old junky navbar
 
 header {
   width: 100%;
@@ -65,11 +105,9 @@ header {
   body {
     padding-top: 0;
   }
-
   header {
     position: sticky;
   }
-
 }
 
 .navbar {
@@ -166,13 +204,6 @@ header {
   }
 }
 
-#welcomeSignIn {
-  background-image: url('../images/welcome-bg.png');
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-}
-
 .signing-in-container{
   background:$light-blue;
   color: white;
@@ -231,17 +262,6 @@ header {
   }
 }
 
-.welcome-container{
-  padding: 50px;
-}
-
-.form-container {
-  color: white;
-  padding: 30px;
-  background: $dark-blue;
-  border-radius: 5px;
-}
-
 .filters {
   padding: 0px;
   margin-left: 0px;
@@ -293,27 +313,27 @@ header {
 // FOOTER
 
 #footer {
-  font-weight: 300;
-  height: auto;
+  width: 100%;
+  margin: 0;
+  height: 70px;
   background-color: $dark-blue;
   color: #fff;
-  padding: 20px 120px;
-  display: flex;
-  flex-direction: row;
-
-  .footer-logo {
-    font-size: 28px;
+  padding: 20px 0px;
+  .container {
+    width: 80%;
+  }
+  .logo {
+    width: 40%;
+    float: left;
+    font-size: 20px;
   }
 
-  .footer-rbc-text{
-    font-size: 13px;
-  }
-  p {
+  .footer-text{
     margin: 0;
-  }
-
-  div {
-    width: 50%;
+    font-size: 13px;
+    width: 60%;
+    float: right;
+    text-align: right;
   }
 }
 
@@ -394,7 +414,6 @@ header {
   }
 }
 
-
 #badges-profile {
   min-height: 200px;
   #badges {
@@ -433,7 +452,7 @@ header {
     padding: 15px;
     display: flex;
     flex-direction: row;
-    
+
   }
 
   .name, .bio, .location {
@@ -517,4 +536,47 @@ header {
 
 .hide {
   display: none;
+}
+
+
+// WELCOME PAGE
+#welcome {
+  height: 40vh;
+  width: 100%;
+  display: grid;
+  .callout {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+#welcomeSignIn {
+  background-image: url('../images/welcome-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+#form {
+  background-color: $dark-blue;
+  color: white;
+  padding: 30px;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 50%;
+  input {
+    border: 1px solid $grey;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+   #form {
+    width: 90%;
+  }
 }
